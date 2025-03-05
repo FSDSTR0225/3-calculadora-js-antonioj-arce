@@ -9,11 +9,12 @@ let a = '';
 let b ='';
 let operator = '';
 
-resetOperator.addEventListener('click', function() {
+resetOperator.addEventListener('click', function clear() {
     display.value = '';
     a = '';
     b = '';
     operator = '';
+    document.getElementById('calculator').reset();
 });
 
 
@@ -64,7 +65,23 @@ buttonResult.addEventListener("click", function() {
         let div = division(Number(a), Number(b)); 
         display.value = div;
 
-    } else {
+    }
+    
+    else if (a && operator === '^' && b) {
+        let exp = exponent(Math.pow(Number(a),  Number(b))); 
+        display.value = exp;
+    }
+
+    else if (a && operator === '√') {
+        let squ = square(Math.sqrt(Number(a))); 
+        display.value = squ;
+    }
+
+    else if (a && operator === '%' && b) {
+        let por = product(Number(a), Number(b)) / 100;
+        display.value = por;
+    }
+     else {
         display.value = 'Operacion incorrecta'
     }
 });
@@ -81,3 +98,14 @@ function product(a, b) {
 function division(a, b) {
     return a / b;
 }
+
+function exponent(a, b) {
+    return a ^ b;
+}
+
+function square(a) {
+    return a;
+}
+
+
+

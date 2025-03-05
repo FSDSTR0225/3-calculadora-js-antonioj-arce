@@ -1,6 +1,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(91, 167, 110);
+    background-image: url("./images/table.jpg");
+    font-weight: bold;
+    color: white;
 }
 
 /* HEADER */
@@ -28,6 +30,7 @@ header {
     align-items: center;
     justify-items: center;
     padding: 20px 20px;
+    
 
 }
 
@@ -38,27 +41,55 @@ header {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    background-color: darkolivegreen;
+    background-color: #464645;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: -10px 5px 5px black;
+    box-shadow: -10px 10px 5px black;
+    border: #2b2a2a;
+    border-width: 3px;
+    border-style: solid;
+    
 
 }
 
 .numbers-buttons > tr > td > button {
     margin: 5px;
-    padding: 20px 50px;
+    padding: 20px 30px;
     font-size: 20px;
-    border-radius: 20px;
+    border-radius: 100%;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: inset 0px 10px 10px 5px #9c9a9a;
 }
+
+.numbers-buttons > tr > td > #red-button {
+    margin: 5px;
+    border-radius: 100%;
+    background-color: #af463e;
+    box-shadow: inset 0px 10px 10px 2px #6a2722;
+}
+
 
 #display {
     margin: 5px;
     padding: 20px 100px;
-    font-size: 20px;
-    border-radius: 20px;
-}
 
+    border-radius: 20px;
+    background-color: #e6e69e;
+    border-radius: 20px;
+    box-shadow: inset 0px 10px 10px 5px rgb(156, 156, 156);
+    border: #e7e789;
+    border-width: 2px;
+    border-style: solid;
+
+    font-family: "Doto", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+      "ROND" 0;
+    font-size: 20px;
+}
 
 
 /* FOOTER */
@@ -77,3 +108,4 @@ footer {
     grid-row-start: 1;
     grid-row-end: 2;
 }
+

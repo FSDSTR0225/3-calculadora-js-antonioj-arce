@@ -1,0 +1,111 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("./images/table.jpg");
+    font-weight: bold;
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 20px 20px;
+}
+.content-header {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+/* CALCULATOR */
+
+.calculator {
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+    align-items: center;
+    justify-items: center;
+    padding: 20px 20px;
+    
+
+}
+
+
+.calculator > .numbers-part {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #464645;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: -10px 10px 5px black;
+    border: #2b2a2a;
+    border-width: 3px;
+    border-style: solid;
+    
+
+}
+
+.numbers-buttons > tr > td > button {
+    margin: 5px;
+    padding: 20px 30px;
+    font-size: 20px;
+    border-radius: 100%;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: inset 0px 10px 10px 5px #9c9a9a;
+}
+
+.numbers-buttons > tr > td > #red-button {
+    margin: 5px;
+    border-radius: 100%;
+    background-color: #af463e;
+    box-shadow: inset 0px 10px 10px 2px #6a2722;
+}
+
+
+#display {
+    margin: 5px;
+    padding: 20px 100px;
+
+    border-radius: 20px;
+    background-color: #e6e69e;
+    border-radius: 20px;
+    box-shadow: inset 0px 10px 10px 5px rgb(156, 156, 156);
+    border: #e7e789;
+    border-width: 2px;
+    border-style: solid;
+
+    font-family: "Doto", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+      "ROND" 0;
+    font-size: 20px;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 20px 20px;
+}
+.content-footer {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
